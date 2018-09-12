@@ -1,1 +1,1 @@
-<h2><%= @appt.patient.name %> has an appointment with <%= @appt.doctor.name %> on <%= @appt.to_readable %></h2>
+<h2><%= link_to @appt.patient.name, patient_path(@appt.patient) %> has an appointment with <%= link_to @appt.doctor.name, doctor_path(@appt.doctor) %> on <%= @appt.to_readable %></h2>
